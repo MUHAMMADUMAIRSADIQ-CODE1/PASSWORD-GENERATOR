@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 body {
@@ -11,8 +12,12 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Poppins', sans-serif;
 }
-
+#Password {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+}
 h2 {
     text-align: center;
     margin-top: 20px;
@@ -38,6 +43,7 @@ h2 {
 .container :nth-child(2) input {
     flex: 1;
     padding: 8px;
+    padding-right: 35px;
     font-size: 14px;
     border-radius: 10px;
     border: transparent;
@@ -127,6 +133,6 @@ input[type="checkbox"] {
     font-size: 18px;
     user-select: none;
     top: 50%;
-    left: 165px;
+    left: 180px;
     transform: translateY(-50%);
 }
