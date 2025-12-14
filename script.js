@@ -31,6 +31,20 @@ function copyPassword() {
     document.execCommand("copy");
     alert("Password copied!");
 }
+function togglePassword() {
+    const passField = document.getElementById("Password");
+    const eye = document.getElementById("toggleEye");
+
+    if (passField.type === "password") {
+        passField.type = "text";
+        eye.classList.remove("fa-eye");
+        eye.classList.add("fa-eye-slash");
+    } else {
+        passField.type = "password";
+        eye.classList.remove("fa-eye-slash");
+        eye.classList.add("fa-eye");
+    }
+}
 
 
 

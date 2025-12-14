@@ -15,7 +15,8 @@ body {
 
 h2 {
     text-align: center;
-    margin-bottom: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -24,12 +25,14 @@ h2 {
     width: 320px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    height: auto;
 }
 
 .container .options {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .container :nth-child(2) input {
@@ -48,18 +51,19 @@ h2 {
     outline: none;
 }
 
-.container :nth-child(2) {
+.container .password-box {
     display: flex;
     gap: 8px;
-    margin-bottom: 12px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     align-items: center;
+    justify-content: center;
 }
 
-.container button {
+.password-box .firstbt {
 
     width: 100%;
-    margin-top: 12px;
-    padding: 10px;
+    padding: 12px;
     background: #667eea;
     color: #fff;
     border: none;
@@ -67,13 +71,32 @@ h2 {
     cursor: pointer;
     font-size: 15px;
     outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.container div .button {
+
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type=range] {
     -webkit-appearance: none;
-    /* browser default remove */
+
     background: #ddd;
-    /* track ka color */
+
     border-radius: 15px;
 }
 
@@ -91,6 +114,19 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type="checkbox"] {
     accent-color: #667eea;
-    /* tick aur border ka color */
     cursor: pointer;
+}
+
+.password-box {
+    position: relative;
+}
+
+#toggleEye {
+    position: absolute;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    top: 50%;
+    left: 165px;
+    transform: translateY(-60%);
 }
