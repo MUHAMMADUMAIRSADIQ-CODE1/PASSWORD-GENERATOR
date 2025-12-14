@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px 24px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container :nth-child(2) input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: transparent;
+    box-shadow: 2px 5px 16px 1px rgba(102, 126, 234, 0.5);
+}
+
+.container :nth-child(2) button {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.container :nth-child(2) {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.container button {
+
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    /* browser default remove */
+    background: #ddd;
+    /* track ka color */
+    border-radius: 15px;
+}
+
+/* Thumb (circle) */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* remove default */
+    width: 16px;
+    height: 16px;
+    background: #667eea;
+    /* thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    accent-color: #667eea;
+    /* tick aur border ka color */
+    cursor: pointer;
+}
