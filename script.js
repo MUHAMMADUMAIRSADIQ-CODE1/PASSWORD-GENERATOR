@@ -38,7 +38,7 @@ function copyPassword() {
     const passField = document.getElementById("Password");
     passField.select();
     document.execCommand("copy");
-   document.getElementById("show").innerHTML=`Password Copied <i class="fa-solid fa-circle-check" style="color:green"></i>`
+    document.getElementById("show").innerHTML = `Password Copied <i class="fa-solid fa-circle-check" style="color:green"></i>`
 }
 function togglePassword() {
     const passField = document.getElementById("Password");
