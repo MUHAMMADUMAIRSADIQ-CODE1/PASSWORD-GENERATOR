@@ -128,5 +128,5 @@ input[type="checkbox"] {
     user-select: none;
     top: 50%;
     left: 165px;
-    transform: translateY(-60%);
+    transform: translateY(-50%);
 }
