@@ -18,6 +18,12 @@ function passwordGenerator() {
         document.getElementById("show").innerHTML = `<p  style ="color:red;text-align:center;margin-bottom:15px;">Please select at least one option !</p>`
         return;
     }
+    if((upperCase && lowerCase) && (numbers && SpecialSymbols)){
+        document.getElementById("show").innerHTML=`Password Strong <i class="fa-solid fa-circle-check" style="color:green"></i> `
+    }
+    else{
+        document.getElementById("show").innerHTML=`Password Weak <i class="fa-solid fa-circle-exclamation" style="color:red"></i>`
+    }
     let Password = "";
     for (i = 0; i < length; i++) {
         let randNo = Math.floor(Math.random() * char.length);
