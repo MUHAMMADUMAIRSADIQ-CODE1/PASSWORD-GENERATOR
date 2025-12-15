@@ -108,14 +108,14 @@ input[type=range] {
     border-radius: 15px;
 }
 
-/* Thumb (circle) */
+
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    /* remove default */
+    
     width: 16px;
     height: 16px;
     background: #667eea;
-    /* thumb color */
+    
     border-radius: 50%;
     cursor: pointer;
     outline: none;
